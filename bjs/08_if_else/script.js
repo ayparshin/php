@@ -50,7 +50,8 @@ document.getElementById('btnRetry').addEventListener('click', function () {
     } 
     (minValue < -999) ? minValue = -999 : console.log('min else');
     (maxValue > 999) ? maxValue = 999 : console.log('max else');
-    
+
+    alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
     orderNumber = 1;
     orderNumberField.innerText = orderNumber;
     answerNumber  = Math.floor((minValue + maxValue) / 2);
